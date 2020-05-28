@@ -36,15 +36,12 @@ class SearchBar extends React.Component {
 						/>
 					</div>
 				</form>
-				<div className="showImageWord">{this.state.term}</div>
 			</div>
 		);
 	}
 }
 
 SearchBar.propTypes = {
-	// You can declare that a prop is a specific JS type. By default, these
-	// are all optional.
 	onSubmit: PropTypes.string
 };
 
