@@ -22,6 +22,7 @@ export class App extends React.Component {
 		return (
 			<div className="container text-center mt-5">
 				<SearchBar onSubmit={this.onSearchSubmit} />
+                <SearchBar onSubmit={this.onSearchSubmit} />
 			</div>
 		);
 	}
