@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
 				<form onSubmit={this.onFormSubmit}>
 					<div className="form-group field">
 						<label htmlFor="exampleFormControlInput1">
-							Image Search
+							Image Search App
 						</label>
 						<input
 							type="text"
