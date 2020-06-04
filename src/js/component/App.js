@@ -2,6 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar.js";
 import regeneratorRuntime from "regenerator-runtime";
 import unsplash from "../api/unsplash";
+import ImageList from "./ImagesList.js";
 
 export class App extends React.Component {
 	state = { images: [] };
@@ -17,10 +18,7 @@ export class App extends React.Component {
 		return (
 			<div className="container text-center mt-5">
 				<SearchBar onSubmit={this.onSearchSubmit} />
-				<p>
-					Number of images:
-					{this.state.images.length}
-				</p>
+				<ImageList images={this.state.images} />
 			</div>
 		);
 	}
