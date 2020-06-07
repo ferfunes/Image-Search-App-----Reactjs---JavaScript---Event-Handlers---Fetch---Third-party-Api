@@ -2,9 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const ImageList = props => {
-	let images = props.images[0];
-	console.log(images);
-	return <h1>h</h1>;
+	let images = props.images;
+
+	let imagesList = images.map((item, index) => {
+		return <img key={index} src={item.urls.regular} />;
+	});
+
+	return (
+		<div>
+			<div>Image List</div>
+
+			<div>{imagesList}</div>
+		</div>
+	);
 };
 
 ImageList.propTypes = {
