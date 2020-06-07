@@ -1,13 +1,15 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.image-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: 150px;
+
+}
+
+.image-list img{
+    width: 250px;
+}

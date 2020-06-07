@@ -5,16 +5,12 @@ const ImageList = props => {
 	let images = props.images;
 
 	let imagesList = images.map((item, index) => {
-		return <img key={index} src={item.urls.regular} />;
+		return (
+			<img key={item.id} alt={item.description} src={item.urls.regular} />
+		);
 	});
 
-	return (
-		<div>
-			<div>Image List</div>
-
-			<div>{imagesList}</div>
-		</div>
-	);
+	return <div className="image-list">{imagesList}</div>;
 };
 
 ImageList.propTypes = {
